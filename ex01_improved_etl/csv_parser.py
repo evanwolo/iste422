@@ -1,3 +1,13 @@
+""" 
+
+To run file, enter desried json file path as the parameter in the json_to_csv() function call within main()
+
+Ubuntu 22.04.3 | Python 3.10.12
+
+$ pip install pandas (https://pandas.pydata.org/docs/index.html)
+
+"""
+
 import pandas as pd
 from datetime import date
 
@@ -18,7 +28,7 @@ def json_to_csv(jsonfile):
         df_filtered.to_csv(csv_filename, encoding='utf-8', index=False)
 
 def main():
-    json_to_csv('ex01_improved_etl/input/data.json')
+    json_to_csv('ex01_improved_etl/input/data.json') # enter file name here
 
 if __name__ == "__main__":
     main()
